@@ -45,17 +45,17 @@ const Carousel = React.forwardRef<ICarouselInstance, TCarouselProps<any>>(
         } = props;
 
         const commonVariables = useCommonVariables(props);
-        const { size, handlerOffsetX } = commonVariables;
+        const { size, handlerOffsetX, dataLength } = commonVariables;
 
         const offsetX = useDerivedValue(() => {
-            const totalSize = size * data.length;
+            const totalSize = size * dataLength;
             const x = handlerOffsetX.value % totalSize;
 
             if (!loop) {
                 return handlerOffsetX.value;
             }
             return isNaN(x) ? 0 : x;
-        }, [loop, size, data]);
+        }, [loop, size, dataLength]);
 
         usePropsErrorBoundary(props);
         useOnProgressChange({ size, offsetX, rawData, onProgressChange });
