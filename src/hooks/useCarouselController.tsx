@@ -7,7 +7,7 @@ import type {
     TCarouselProps,
     WithTimingAnimation,
 } from '../types';
-import { dealWithAnimation } from '@/utils/dealWithAnimation';
+import { dealWithAnimation } from '../utils/dealWithAnimation';
 
 interface IOpts {
     loop: boolean;

@@ -26,6 +26,6 @@ export function useCommonVariables(
         size,
         validLength,
         handlerOffsetX,
-        dataLength: data.length
+        dataLength: data.length,
     };
 }
