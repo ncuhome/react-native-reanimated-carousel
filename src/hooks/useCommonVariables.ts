@@ -6,7 +6,6 @@ interface ICommonVariables {
     size: number;
     validLength: number;
     handlerOffsetX: Animated.SharedValue<number>;
-    dataLength: number;
 }
 
 export function useCommonVariables(
@@ -26,6 +25,5 @@ export function useCommonVariables(
         size,
         validLength,
         handlerOffsetX,
-        dataLength: data.length
     };
 }
