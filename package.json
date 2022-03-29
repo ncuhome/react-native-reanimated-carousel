@@ -1,5 +1,5 @@
 {
-    "name": "@ncuhome/react-native-reanimated-carousel",
+    "name": "@admoriarty/react-native-reanimated-carousel",
     "version": "2.3.2-fix",
     "description": "Simple carousel component.fully implemented using Reanimated 2.Infinitely scrolling, very smooth.",
     "main": "src/index",
